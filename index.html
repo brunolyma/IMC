@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora IMC</title>
+</head>
+
+<body>
+
+    <section id="error-form" class="hide">
+        Digite somente números
+    </section>
+
+    <section id="calculator">
+        <h1>Cálculo IMC</h1>
+        <form action="">
+            <div>
+                <label for="weight">Peso (kg)</label>
+                <input type="text" name="weight" id="weight" maxlength="3" placeholder="60" required>
+            </div>
+            <div>
+                <label for="height">Altura (m)</label>
+                <input type="text" name="height" id="height" maxlength="3" placeholder="165" required>
+            </div>
+            <button type="submit">Calcular IMC <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
+                    viewBox="0 0 17 16" fill="none">
+                    <path
+                        d="M3.1685 8.26205L14.3589 8.26213M14.3589 8.26213L9.64488 3.54808M14.3589 8.26213L9.64488 12.9762"
+                        stroke="white" stroke-width="1.20972" stroke-linecap="round" stroke-linejoin="round" />
+                </svg></button>
+        </form>
+    </section>
+    <section id="result">
+        <div class="message">
+            <img src="./assets/close.svg" alt="botão close">
+            <h2>
+                Seu IMC é de 28!
+            </h2>
+        </div>
+    </section>
+
+</body>
+
+</html>
