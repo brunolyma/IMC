@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer=""></script>
     <title>Calculadora IMC</title>
 </head>
 
@@ -19,14 +20,14 @@
 
     <section id="calculator">
         <h1>Cálculo IMC</h1>
-        <form action="">
+        <form onsubmit="handleSubmit(event)">
             <div>
                 <label for="weight">Peso (kg)</label>
-                <input type="text" name="weight" id="weight" maxlength="3" placeholder="60" required>
+                <input type="text" name="weight" id="weight" maxlength="3" placeholder="60">
             </div>
             <div>
                 <label for="height">Altura (m)</label>
-                <input type="text" name="height" id="height" maxlength="3" placeholder="165" required>
+                <input type="text" name="height" id="height" maxlength="3" placeholder="165">
             </div>
             <button type="submit">Calcular IMC <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
                     viewBox="0 0 17 16" fill="none">
@@ -36,9 +37,9 @@
                 </svg></button>
         </form>
     </section>
-    <section id="result">
+    <section id="result" class="show">
         <div class="message">
-            <img src="./assets/close.svg" alt="botão close">
+            <img onclick="handleModal()" src="./assets/close.svg" alt="botão close">
             <h2>
                 Seu IMC é de 28!
             </h2>
