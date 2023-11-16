@@ -25,9 +25,6 @@ button {
 .hide {
   display: none;
 }
-#result.show {
-  display: grid;
-}
 
 #error-form {
   width: 100%;
@@ -107,23 +104,27 @@ button {
   background-color: #005671;
 }
 
-#result {
+#result.close {
   display: none;
+}
+
+#result {
+  display: grid;
   place-content: center;
   inset: 0;
   position: absolute;
   background: rgba(0, 0, 0, 0.7);
 }
 
-#result div.message {
+#result div.card {
   width: 36.3rem;
-  height: 15.2rem;
+  height: 14rem;
   background-color: white;
   border-radius: 0.6rem;
   position: relative;
 }
 
-div.message img {
+div.card img {
   position: absolute;
   top: 3%;
   right: 2%;
@@ -131,10 +132,10 @@ div.message img {
   cursor: pointer;
   transition: all 0.2s;
 }
-div.message img:hover {
+div.card img:hover {
   scale: 1.1;
 }
-div.message h2 {
+div.card h2 {
   font-size: 3.2rem;
-  margin: 5.2rem 0 0 6rem;
+  margin: 5.2rem 0 0 3rem;
 }

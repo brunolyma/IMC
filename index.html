@@ -26,7 +26,7 @@
                 <input type="text" name="weight" id="weight" maxlength="3" placeholder="60">
             </div>
             <div>
-                <label for="height">Altura (m)</label>
+                <label for="height">Altura (cm)</label>
                 <input type="text" name="height" id="height" maxlength="3" placeholder="165">
             </div>
             <button type="submit">Calcular IMC <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16"
@@ -37,11 +37,11 @@
                 </svg></button>
         </form>
     </section>
-    <section id="result" class="show">
-        <div class="message">
+    <section id="result" class="close">
+        <div class="card">
             <img onclick="handleModal()" src="./assets/close.svg" alt="botão close">
             <h2>
-                Seu IMC é de 28!
+                Seu IMC é de <span class="message"></span>!
             </h2>
         </div>
     </section>
